@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro usuário </title>
+
+<style>
+    form {
+        text-align: center;
+     }
+     p {
+        margin: 10px 0;
+     }
+     body {
+        background: rgb(180, 198, 255);
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+     }
+    
+     h1 {
+      color: #2135a5;
+      font-size: 24px;
+      text-align:center
+        }
+    
+
+     button {
+      background-color: #4CAF50; /* Verde */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+     }
+
+     label {
+    width: 150px; /
+    text-align: right;
+    margin-right: 10px;
+    
+    }
+
+    input {
+    border: 2px solid rgb(0, 0, 0); /
+    border-radius: 5px;    
+    padding: 10px;         
+    width: 250px; 
+
+    select {
+    width: 150px; 
+    }
+
+
+</style>
+
+
+    
+</head>
+<body>
+    
+    <h1>Cadastro de Usuário</h1>
+
+    <form method="post" action="#">
+
+        <fieldset>
+            
+            <label for="nomePessoa">Nome:</label><br>
+            <input name="nomePessoa" type="text" placeholder="Nome Completo" required><br><br>
+
+       
+            <label for="emailpessoa">Email:</label><br>
+            <input name="emailpessoa" type="email" placeholder="@gmail.com " required><br><br>
+
+            
+            <label for="senhapessoa">Senha:</label><br>
+            <input name="senhapessoa" type="password" minlength="6" required> <br><br>
+
+    
+            <label for="senhapessoa">Confirmar senha:</label><br>
+            <input name="senhapessoa" type="password" minlength="6" required><br><br>
+
+
+            <label for="perfilpessoa">Perfil:</label><br>
+
+            
+            <select name="=perfilpessoa">
+
+                <option value="" date-default disabled selected>Selecione um perfil</option>
+                <option value="professor">Professor</option>
+                <option value="administrador">Administrador</option>
+                <option value="jogador">Jogador</option> 
+
+            </select> <br><br><br>
+            
+
+            <p> <button type=submit>Cadastro</button></p>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
